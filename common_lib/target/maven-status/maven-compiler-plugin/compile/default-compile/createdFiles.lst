@@ -1,1 +1,3 @@
 ru\lanolin\common\Command.class
+ru\lanolin\common\Jackson2JsonEncoderWithEncrypt.class
+ru\lanolin\common\Jackson2JsonDecoderWithEncrypt.class

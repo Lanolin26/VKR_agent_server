@@ -1,0 +1,12 @@
+spring.application.name: Agent
+
+server.port: 7777
+spring.rsocket.server.port: 7776
+
+spring.servlet.multipart.enabled: true
+spring.servlet.multipart.max-file-size: 10MB
+spring.servlet.multipart.max-request-size: 15MB
+spring:
+  devtools:
+    livereload:
+      port: 33333

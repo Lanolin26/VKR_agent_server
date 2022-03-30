@@ -1,20 +1,13 @@
 package ru.lanolin.agent;
 
-import java.io.IOException;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class Main {
 
-	public static void main(String[] args) throws IOException {
-		Configuration p = Configuration.loadProperties();
-		Client client = new Client();
-		client.connect(p);
-		Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-			try {
-				client.close();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}));
+	public static void main(String[] args) {
+		SpringApplication.run(Main.class, args);
 	}
 
 }
